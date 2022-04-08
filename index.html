@@ -7,6 +7,7 @@
     <title>Empreweb</title>
 
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/hint.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,9 +22,9 @@
                 <nav id="nav">
                     <ul>
                         <li><a href="#" class="select">Inicio</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Trabajos</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#trabajos">Trabajos</a></li>
+                        <li><a href="#pricing">Contacto</a></li>
                     </ul>
                 </nav>
 
@@ -36,7 +37,7 @@
         </div>
     </header>
 
-    <div class="container__all" id="container_all">
+    <div class="container__all offset" id="container_all">
 
         <div class="cover">
 
@@ -66,7 +67,7 @@
         </div>
 
         <!--    SERVICIOS   -->
-    <div class="services">
+    <div class="services offset" id="services">
         <h2>Nuestros servicios web incluyen</h2>
         <p>Diseños de páginas web simples, modernas y de alta calidad.</p>
     </div>         
@@ -153,7 +154,7 @@
 
     <!--    TRABAJOS    -->
 
-    <div class="trabajos">
+    <div class="trabajos offset" id="trabajos">
         <h2>Nuestros trabajos destacados</h2>
     </div> 
 
@@ -173,7 +174,7 @@
 
     <!--    Preguntas frecuentes    -->
 
-    <div class="preguntas-frecuentes">
+    <div class="preguntas-frecuentes offset">
         <h2>Preguntas Frecuentes</h2>
     </div> 
     <main>
@@ -260,7 +261,7 @@
     <!--    PRECIOS     -->
 
 
-    <section id="pricing" class="pricing">
+    <section id="pricing" class="pricing offset">
             <h2>Elige plan que más se adapte a tus necesidades</h2>
 
         <div class="table">
@@ -279,7 +280,9 @@
                     <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>Carefully crefted components</li>
                     <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>Amazing page examples</li>
                     <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>Super friendly support team</li>
-                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>Awesome support</li>
+                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>Sitio Landing Page
+                        <span class="hint--bottom" aria-label="Todo tu sitio en una página"> <i class="fas fa-info-circle cc"></i></span>
+                    </li>
                 </ul>
 
                 <ul class="header-btn">
@@ -304,7 +307,10 @@
                     <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>Amazing page examples</li>
                     <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>Super friendly support team</li>
                     <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>Awesome support</li>
-                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>Carefully crefted components</li>
+                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>Sitio con Múltiples páginas
+                        <span class="hint--top-right" aria-label="Múltiples páginas dentro de tu sitio web"> <i class="fas fa-info-circle cc"></i></span>
+
+                </li>
                 </ul>
 
                 <ul class="header-btn">
@@ -372,10 +378,10 @@
     
     <div class="box__footer">
         <h2>Compañia</h2>
-        <a href="#">Acerca De</a>
-        <a href="#">Trabajos</a>
-        <a href="#">Procesos</a>
-        <a href="#">Servicios</a>
+        <a href="#">Home</a>
+        <a href="#services">Servicios</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#pricing">Precios</a>
     </div>
     
     <div class="box__footer">

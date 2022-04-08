@@ -24,6 +24,17 @@
     transition: all 300ms;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+.offset::before{
+    display: block;
+    content: "";
+    height: -18px;
+    margin-bottom: 50px;
+}
+
 
 
 header{
@@ -206,7 +217,7 @@ nav ul li:hover{
 
 
 .bg_color{
-    max-width: 1300px;
+    max-width: 1200px;
     max-height: 100vh;
     width: 100%;
     height: 580px;
@@ -780,6 +791,12 @@ main {
 .pricing .basic ul li i{
     padding-right: 5px;
     color: var(--secundario);
+}
+
+.pricing .basic ul li i.cc{
+    color: var(--gris-claro);
+    padding-left: 5px;
+    font-size: 15px;
 }
 
 .pricing .header-btn{
