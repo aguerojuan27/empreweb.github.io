@@ -39,7 +39,7 @@ window.addEventListener("resize", function(){
 
 // Scroll up  // lleva el scroll al inicio
 
-document.getElementById("button-up").addEventListener("click", scrollUp);
+/*document.getElementById("button-up").addEventListener("click", scrollUp);
 
 function scrollUp(){
 
@@ -49,7 +49,7 @@ function scrollUp(){
         window.scrollTo (0, currentScroll - (currentScroll / 8));
     }
 }
-
+*/
 buttonUp = document.getElementById("button-up");
 
 // Hace visible el btn-up
