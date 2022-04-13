@@ -21,6 +21,11 @@
 	--sombra: 0 0 13px 0 rgba(124, 124, 124, 0.25);
 }
 
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 .container__all{
     position: relative;
     right: 0;
@@ -113,15 +118,7 @@ nav ul li:hover{
     border-radius: 20px;
     border: #373737;
 }
-/*.select{
-    background: #373737;
-    opacity: .3;
-    padding: 10px 30px;
-    color: #ffffff;
-    border-radius: 20px;
-    border: #373737;
-}
-*/
+
 .nav_mod{
     height: 70px;
     box-shadow: 1px 1px 10px 0px #00000010;
