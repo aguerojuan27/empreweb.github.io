@@ -120,3 +120,46 @@ preguntas.forEach((pregunta) => {
 });
 
 
+//	Intersection Observer
+const section1 = document.getElementById('services');
+const section2 = document.getElementById('box');
+const section3 = document.getElementById('box1');
+const section4 = document.getElementById('box2');
+const section5 = document.getElementById('box3');
+const section6 = document.getElementById('box4');
+const section7 = document.getElementById('box5');
+const section8 = document.getElementById('box6');
+
+
+
+const cargarSection = (entradas, observador) => {
+	// console.log(entradas)
+	// console.log(observador)
+
+	entradas.forEach((entrada) => {
+		if(entrada.isIntersecting){
+			entrada.target.classList.add('visible', 'box-visible');
+		} else {
+			//entrada.target.classList.remove('visible');
+		}
+	});
+}
+
+const observador = new IntersectionObserver(cargarSection, {
+	root: null,
+	rootMargin: '0px 0px 0px 0px',
+	threshold: 1.0 
+});
+
+observador.observe(section1);
+observador.observe(section2);
+observador.observe(section3);
+observador.observe(section4);
+observador.observe(section5);
+observador.observe(section6);
+observador.observe(section7);
+observador.observe(section8);
+
+
+
+

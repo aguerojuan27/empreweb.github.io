@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 *{
     margin: 0;
@@ -8,6 +9,8 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
+    *font-family: 'Montserrat', sans-serif;
+
 }
 
 :root{
@@ -217,7 +220,7 @@ nav ul li:hover{
 
 
 .bg_color{
-    max-width: 1200px;
+    max-width: 1800px;
     max-height: 100vh;
     width: 100%;
     height: 580px;
@@ -386,7 +389,7 @@ nav ul li:hover{
     height: 250px;
     background: var(--color-esqueleto);
     margin: 20px;
-} 
+}    
 
 /* Boton de ir arriba */
 .button-up{
@@ -400,8 +403,8 @@ nav ul li:hover{
     border-radius: 50%;
     font-size: 20px;
     position: fixed;
-    bottom: -50px;
-    right: 30px;
+    bottom: -40px;
+    right: 20px;
     cursor: pointer;
     border: 4px solid transparent;
 }
@@ -411,9 +414,33 @@ nav ul li:hover{
     border-color: rgba(0, 0, 0, 0, 0.1);
 }
 
-.show-scroll{
-    bottom: 50px
+.button-wp{
+    width: 40px;
+    height: 40px;
+    background: var(--color-esqueleto);
+    color: #00BB2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 25px;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    cursor: pointer;
+    border: 0.7px solid #757575;
 }
+
+.button-wp:hover{
+    transform: scale(.9);
+    border-color: rgba(0, 0, 0, 0, 0.1);
+}
+
+.show-scroll{
+    bottom: 40px
+}
+
 
 
 
@@ -427,6 +454,13 @@ nav ul li:hover{
     justify-content: center;
     align-content: center;
     flex-direction: column;
+
+    opacity: 0;
+    transition: .7s ease-in-out all;
+}
+
+.visible{
+    opacity: 1;
 }
 
 .services h2{
@@ -459,6 +493,14 @@ nav ul li:hover{
     margin-right: 20px;
     padding: 20px 25px;
     box-shadow: 3px 3px 5px #f1f0f0;
+
+    
+    opacity: 0;
+    transition: .5s ease-in-out all;
+}
+
+.box-visible{
+    opacity: 1;
 }
 
 .box:hover{
@@ -810,12 +852,13 @@ main {
     border-radius: 50px;
     outline: medium none;
     border: 1px solid var(--secundario);
-    color: #1d1d1d;
+    color: #ffffff;
+    background-color: #ffc62a;
 }
 
 .pricing .header-btn a:hover{
-    background-color: var(--primario);
-    color: #fff;
+    background-image: linear-gradient(to right, #FFB76B 100%, #FFA73D 10%, #FF7C00 0%, #f0953f 0% );
+    color: #000;
 }
 
 
@@ -881,9 +924,9 @@ footer{
     width: 180px;
 }
 
-.box__footer .terms{
+.box__footer .terms p{
     max-width: 350px;
-    margin-top: 10px;
+    margin-top: 12px;
     font-weight: 400;
     color: #ffffff;
     font-size: 18px;
@@ -891,12 +934,18 @@ footer{
 }
 
 .box__footer h2{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #343434;
     font-weight: 700;
 }
 
 .box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer p{
     margin-top: 10px;
     color: #7a7a7a;
     font-weight: 600;
