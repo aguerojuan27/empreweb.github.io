@@ -895,8 +895,7 @@ main {
 footer{
     width: 100%;
     padding: 50px 0px;
-    background-image: url(../images/Valley-10s-1366px.svg);
-    *background-size: cover;
+    background-image: url(../images/Valley-100s-1366px.svg);
 /*    -webkit-mask-image: url(../images/Wave-10s-1366px.svg);
     -webkit-mask-size: cover;
 */   
