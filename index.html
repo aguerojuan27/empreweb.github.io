@@ -7,6 +7,7 @@
     <title>Empreweb</title>
 
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Bootstrap CSS -->
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -55,7 +56,7 @@
                     diseño de sitios web y posicionamiento SEO en buscadores.<br> 
                     Estamos capacitados 
                     para ayudarte a <b>impulsar tu negocio en internet.</b></p>
-                    <a href="#services">
+                    <a href="#services" class="modalup">
                     <input type="button" value="Empecemos">
                     </a>    
                 </div>
@@ -162,8 +163,8 @@
     <div class="body__Page">
 
         <div class="container__article">
-            <div class="box__article" id="work1"></div>
-            <div class="box__article" id="work2"></div>
+            <div class="box__article" id="work1" data-open="modal1"></div>
+            <div class="box__article" id="work2" data-open="modal2"></div>
             <div class="box__article" id="work3"></div>
             <div class="box__article" id="work4"></div>
             <div class="box__article" id="work5"></div>
@@ -172,6 +173,30 @@
             <div class="box__article" id="work8"></div>
         </div>
     </div>
+
+    <!--    Modal   -->
+    <section class="modal" id="modal1">
+        <div class="modal__container">
+            <img src="images/elementorecommerce_template_fashion-design.png" class="modal__img">
+            <h2 class="modal__title">Tienda Virtual</h2>
+            <p class="modal__paragraph">Collection <b>shoes</b>, nos contrató para el diseño de su tienda online y en el 
+                posicionamiento SEO.
+            </p>
+        </div>
+    </section>
+
+    <!--    Modal 2     -->
+    <section class="modal" id="modal2">
+        <div class="modal__container">
+            <img src="images/edinburgh-home-page-1536x1005.png" alt="calltoaction" class="modal__img" >
+            <h2 class="modal__title">Plan Basic</h2>
+            <p class="modal__paragraph">Collection <b>shoes</b>, nos contrató para el diseño de su tienda online y en el 
+                posicionamiento SEO.
+            </p>
+        </div>
+    </section>
+
+    
 
     <!--    Preguntas frecuentes    -->
 
@@ -210,7 +235,7 @@
         <div class="contenedor-preguntas activo" data-categoria="metodos-pago">
             <div class="contenedor-pregunta">
                 <p class="pregunta">¿Que metodos de pago disponibles tienen? <img src="images/f&q/suma.svg" alt="Abrir Respuesta" /></p>
-                <p class="respuesta">Podes contratar nuestros servicios abonando con Mercado Pago, Transferencia Bancaria. Tarjetas de Débito y Crédito.</p>
+                <p class="respuesta">Podes contratar nuestros servicios abonando con Mercado Pago, Paypal, Transferencia Bancaria. Tarjetas de Débito y Crédito.</p>
             </div>
             <div class="contenedor-pregunta">
                 <p class="pregunta">¿Tienen plazo de pago? <img src="images/f&q/suma.svg" alt="Abrir Respuesta" /></p>
@@ -270,6 +295,18 @@
     </div>
     </main>
 
+    <!--    Call To Action  -->
+    <section class="callToAct">
+
+        <div class="parallax">
+            <div class="call-content">
+                <h3 class="call-title">Charlemos del proyecto que tenés en mente</h3>
+                <p class="text">Contanos sobre tu proyecto, nosotros lo hacemos realidad.</p>
+            </div>
+        </div>
+
+    </section>
+
 
     <!--    PRECIOS     -->
 
@@ -286,7 +323,7 @@
                     <span class="sing">$</span>
                     <span class="currency">4999</span>
                     <span class="cent">.99</span>
-                    <span class="date">/año</span>
+                    <span class="date">ARS /año</span>
                 </div>
 
                 <ul>
@@ -315,7 +352,7 @@
                     <span class="sing">$</span>
                     <span class="currency">7999</span>
                     <span class="cent">.99</span>
-                    <span class="date">/año</span>
+                    <span class="date">ARS /año</span>
                 </div>
 
                 <ul>
@@ -346,13 +383,13 @@
                     <span class="sing">$</span>
                     <span class="currency">9999</span>
                     <span class="cent">.99</span>
-                    <span class="date">/año</span>
+                    <span class="date">ARS /año</span>
                 </div>
 
                 <ul>
                     <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>DOMINIO</li>
                     <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>DISEÑO PERSONALIZADO</li>
-                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>HASTA 100 PRODUCTOS EN TIENDA</li>
+                    <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>HASTA 60 PRODUCTOS EN TIENDA</li>
                     <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>WPP BUSSINES + MAPS + ENVIOS
                         <div class="tooltip"><i class="fas fa-info-circle cc"></i>
                             <span class="tooltiptext">Toma pedidos por WhatsApp Bussines, realiza entregas con Correo Arg</span>
@@ -434,7 +471,7 @@
         <p>Oficinas remotas en Quitilipi - Chaco.</p>        
         <p>Agüero Juan - Diseñador Web </p>
         <p>Lob-Celes - Marketing en Redes</p>
-        <p>Capacitados en <b>Cenit Chaco - Informatorio</b>.</p>
+        <p>Contratá tambien nuestro servicio de <br> <b>fotográfia de productos</b> <br>para tu Tienda Virtual.</p>
     </div>
 
 
@@ -451,6 +488,7 @@
     </footer>
 
     </div>
-<script src="js/script.js"></script> 
+<script src="js/script.js"></script>
+ <!-- Option 1: Bootstrap Bundle with Popper -->
 </body>
 </html>
